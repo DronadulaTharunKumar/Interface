@@ -1,0 +1,131 @@
+.about-us {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+    padding: 50px 0;
+    overflow: hidden;
+  }
+  
+  /* Titles with Advanced Effects */
+  h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Hover Glow Effect */
+  .hover-glow {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0px 10px 30px rgba(41, 52, 181, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Section Parallax Effect */
+  .parallax {
+    background: url('https://i.postimg.cc/NjK4b5Qp/about-us.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Image Float Animation */
+  @keyframes floatImage {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .img-float {
+    animation: floatImage 3s infinite ease-in-out;
+  }
+  
+  /* Rotating Highlighted Text */
+  .rotating-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2934b5;
+    position: relative;
+    display: inline-block;
+    animation: rotateText 3s infinite alternate ease-in-out;
+  }
+  
+  @keyframes rotateText {
+    0% { transform: rotate(0deg); color: #fabc05; }
+    100% { transform: rotate(5deg); color: #2934b5; }
+  }
+  
+  /* Smooth Hover on Process Steps */
+  .process-box {
+    background: #f8f9fa;
+    font-weight: bold;
+    padding: 15px;
+    border-left: 5px solid #fabc05;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .process-box:hover {
+    background: linear-gradient(45deg, #fabc05, #2934b5);
+    color: #fff;
+    transform: scale(1.05) rotate(1deg);
+  }
+  
+  /* Core Values Flip Animation */
+  .core-values h4 {
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(41, 52, 181, 0.1);
+    transition: all 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .core-values h4:hover {
+    background: #2934b5;
+    color: #fff;
+    transform: rotateY(180deg);
+  }
+  
+  /* Founder Section - 3D Card Effect */
+  .founder-card {
+    transition: all 0.4s ease-in-out;
+    transform: rotateX(5deg) rotateY(5deg);
+  }
+  
+  .founder-card:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+  }
+  
+  /* Call to Action Button - Neon Effect */
+  .btn-primary {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(41, 52, 181, 0.5);
+  }
+  
+  .btn-primary:hover {
+    background-color: #fabc05;
+    border: none;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(250, 188, 5, 0.7);
+  }
+  

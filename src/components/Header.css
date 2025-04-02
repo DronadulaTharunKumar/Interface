@@ -1,0 +1,158 @@
+/* Hero Section */
+.header {
+  padding: 140px 0 120px; /* Adjusted to fix spacing issues */
+  text-align: center;
+  position: relative;
+  background: inherit; /* Keeps original background */
+}
+
+
+
+/* Main Heading */
+.main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color:blue;
+  text-transform: uppercase;
+  animation: glowText 1.5s infinite alternate;
+  margin-bottom: 30px;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #fabc05, 0 0 20px #fabc05;
+  }
+  to {
+    text-shadow: 0 0 15px whitesmoke, 0 0 30px whitesmoke;
+  }
+}
+
+/* Highlighted "LEARNING" */
+.highlights {
+  color: #fabc05;
+  font-weight: bold;
+}
+
+/* Welcome to Trivya */
+.welcome-text {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: white;
+  color: blue;
+  border-radius: 20px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-in forwards;
+  margin-bottom: 15px;
+}
+/* Glowing Effect for TRIVYA */
+.animate-glow {
+  font-weight: bold;
+  color: #fabc05;
+  text-shadow: 0 0 10px #fabc05, 0 0 20px #fabc05, 0 0 30px #fabc05;
+  animation: glowAnimation 1.5s infinite alternate;
+}
+
+@keyframes glowAnimation {
+  from {
+    text-shadow: 0 0 10px #fabc05, 0 0 20px #fabc05;
+  }
+  to {
+    text-shadow: 0 0 15px #fabc05, 0 0 30px #fabc05;
+  }
+}
+
+
+/* Subheading */
+.sub-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Buttons */
+.explore-btn, .enroll-btn {
+  padding: 12px 22px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.explore-btn {
+  background: #fabc05;
+  border: none;
+  color: black;
+}
+
+.enroll-btn {
+  background: #3bde7a;
+  border: none;
+  color: black;
+}
+
+.explore-btn:hover, .enroll-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  left: spacing 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+/* Developer Image - Bounce */
+.animate-bounce {
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Learning Image - Slide In */
+.animate-slide {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideIn 1.2s ease-in forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Adjust Row Spacing */
+.row {
+  margin-bottom: 50px;
+}  

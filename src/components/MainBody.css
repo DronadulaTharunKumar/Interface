@@ -1,0 +1,719 @@
+/* General Styles */
+/* General Reset */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Achievements Heading with Modern Effects */
+.achievements-heading {
+  background-color: #2934b5; /* Blue background */
+  color: white; /* Text color */
+  padding: 30px 20px; /* Padding for spacing */
+  text-align: center; /* Center the text */
+  font-size: 2rem; /* Larger font size */
+  font-weight: 600; /* Make text bold */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+  letter-spacing: 1px; /* Slight spacing between letters */
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Hover effect for Achievements Heading */
+.achievements-heading:hover {
+  transform: translateY(-10px); /* Slight upward movement on hover */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow for hover */
+  background-color: #1f2a8a; /* Darker blue on hover */
+}
+
+/* Achievements Image with Smooth Hover Effect */
+.achievements-image {
+  background-color: white; /* White background */
+  padding: 20px; /* Padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  display: flex; /* Flexbox for centering image */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  overflow: hidden; /* Ensures image doesn't overflow rounded corners */
+  margin-bottom: 20px;
+}
+
+/* Hover effect for Achievements Image */
+.achievements-image:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* For responsive design, make sure the heading and image are adaptive */
+@media (max-width: 768px) {
+  .achievements-heading {
+    font-size: 1.5rem; /* Smaller text for mobile */
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    margin-bottom: 15px; /* Slightly less space between heading and image */
+  }
+
+  .achievements-image {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero-section {
+  background-color: #fabc05;
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+/* Flexbox for Alignment */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  gap: 50px;
+}
+
+/* Left Side */
+.hero-text {
+  flex: 1;
+  text-align: left;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+/* Right Side */
+.hero-highlights {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+/* Individual Highlight */
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Icon Styling */
+.hero-icon {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.highlight:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.highlight:hover .hero-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-highlights {
+    align-items: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+
+
+
+/* Become the Top 1% */
+/* Become the Top 1% */
+.top-1-section {
+  background-color: white;
+  padding: 50px 20px;
+}
+
+.top-1-section h2 {
+  color: #2934b5;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.top-1-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Grid Items */
+.top-1-item {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 280px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-1-item img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Color Variations */
+.blue {
+  background-color: #2934b5;
+  color: white;
+}
+
+.yellow {
+  background-color: #fabc05;
+  color: black;
+}
+
+/* Hover Effect */
+.top-1-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+  .top-1-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Featured Courses */
+/* Courses Section */
+.courses-section {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Featured Badge - Centered */
+.featured-badge {
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 15px;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Section Title */
+.courses-section h2 {
+  color: #2934b5;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Course Card */
+.course-card {
+  background-color: white;
+  width: 320px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps button aligned at the bottom */
+}
+
+/* Course Image */
+.course-card img {
+  width: 100%;
+  height: 180px; /* Set uniform image size */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.4s ease-in-out;
+}
+
+/* Hover Effect: Image Overlay */
+.course-card:hover img {
+  filter: brightness(85%);
+}
+
+/* Course Title */
+.course-card h3 {
+  color: black;
+  font-size: 1.3rem;
+  margin: 12px 0;
+  transition: 0.3s ease-in-out;
+}
+
+/* Course Description */
+.course-card p {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Course Rating and Info */
+.course-card span {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Enroll Button */
+.course-card button {
+  background-color: #fabc05;
+  color: black;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect: Button Glow */
+.course-card button:hover {
+  background-color: #d89e04;
+  box-shadow: 0 0 12px rgba(250, 188, 5, 0.8);
+  transform: scale(1.05);
+}
+
+/* Button Ripple Effect */
+.course-card button::after {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.course-card button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+/* Hover Effect: Card Scale & Shadow */
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .courses-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .course-card {
+    width: 95%;
+  }
+
+  .course-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .course-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* 🔹 Testimonials Section */
+/* 🔹 Testimonials Section */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* 🔹 Section Title */
+.section h2 {
+  color: #2934b5;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* 🔹 Testimonials Grid */
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🔹 Testimonial Card */
+.testimonial-card {
+  width: 350px;
+  padding: 25px;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+  background-color: #fff3cd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔹 Hover Effect: Card Scale & Shadow */
+.testimonial-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Testimonial Title */
+.testimonial-card h3 {
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+/* 🔹 Testimonial Text */
+.testimonial-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Testimonial Footer */
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: gray;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/* 🔹 Name & Role */
+.testimonial-footer strong {
+  color: #2934b5;
+  font-size: 1rem;
+}
+
+.testimonial-footer span {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 5px;
+}
+
+/* 🔹 Star Ratings */
+.stars {
+  color: #fabc05;
+  font-size: 1.1rem;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    gap: 25px;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 85%;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    width: 95%;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Certifications */
+.section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #2934b5;
+  margin-bottom: 30px;
+}
+
+.certifications-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Increased spacing */
+  flex-wrap: wrap;
+}
+
+.cert-card {
+  background-color: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px; /* Increased size */
+  text-align: center;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+}
+
+/* Logo Styles */
+.cert-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+/* Certification Name */
+.certifications-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Increased gap between cards */
+  flex-wrap: wrap;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.cert-card {
+  background-color: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px; /* Slightly increased width */
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.cert-card img {
+  width: 80px; /* Adjusted logo size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+}
+
+.certified-badge {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+
+
+/* FAQ Section */
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-item:hover {
+  background-color: #e2e6ea;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.faq-answer {
+  margin-top: 10px;
+}
+
+/* Contact Form */
+.contact-section {
+  background-color: #fabc05;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #2934b5;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #1d268e;
+}
+
+/* Encouragement Section */
+.encouragement-section {
+  background-color:white;
+  padding: 40px 20px;
+  color: blue;
+}
+
+.encouragement-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.encouragement-content img {
+  width:400px;
+  transition: 0.3s;
+}
+
+.encouragement-content img:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .top-1-grid, .courses-grid, .testimonials-grid, .certifications-container, .encouragement-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
